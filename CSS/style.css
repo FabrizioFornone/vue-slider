@@ -1,3 +1,27 @@
 body {
-    background-color: slategray;
+  background-color: slategray;
+}
+
+.container > div {
+  position: relative;
+}
+
+.btn-bw,
+.btn-fw {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-bw {
+    right: 0;
+}
+
+.btn-fw {
+}
+
+button,
+img {
+  border-radius: 10%;
 }

@@ -5,9 +5,17 @@
 new Vue({
   el: "#app",
   data: {
-      test: "Ecco il test"
+    test: "Ecco il test",
+    currentIndex: 0,
+    image: [
+      "https://unsplash.it/600?image=10",
+      "https://unsplash.it/600?image=20",
+      "https://unsplash.it/600?image=30",
+      "https://unsplash.it/600?image=40",
+      "https://unsplash.it/600?image=50",
+    ],
   },
-  methods:{
+  methods: {
 
-  }
+  },
 });

@@ -18,8 +18,12 @@
   <body>
     <header class="text-center text-white mb-5"><h1>Vue Slider</h1></header>
     <div id="app">
-      <div class="container text-center">
-        <div>{{ test }}</div>
+      <div class="container d-flex justify-content-center">
+        <div>
+          <button class="text-white border border-white p-1 fs-4 btn-bw">B W</button>
+          <button class="text-white border border-white p-1 fs-4 btn-fw">F W</button>
+          <img :src="image[currentIndex]" class="img-fluid" alt="" />
+        </div>
       </div>
     </div>
     <script src="./js/script.js"></script>
