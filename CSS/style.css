@@ -11,14 +11,11 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.btn-bw {
-    right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .btn-fw {
+    right: 0;
 }
 
 button,

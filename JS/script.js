@@ -16,6 +16,12 @@ new Vue({
     ],
   },
   methods: {
+    bwButton: function () {
+        this.currentIndex--;
+    },
+    fwButton: function () {
+        this.currentIndex++;
+    },
 
   },
 });
