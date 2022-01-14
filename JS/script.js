@@ -13,9 +13,6 @@ new Vue({
       "https://unsplash.it/600?image=40",
       "https://unsplash.it/600?image=50",
     ],
-    shots: `<span
-    :class="['mx-2','border', 'rounded-circle', 'currentIndex === 1' ? 'active' : 'disable']"
-  ></span>`
   },
   methods: {
     bwButton: function () {
