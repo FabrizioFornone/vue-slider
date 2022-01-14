@@ -8,6 +8,11 @@ body {
   position: relative;
 }
 
+i {
+  cursor: pointer;
+  font-size: 20px;
+}
+
 /* Buttons */
 
 .btn-bw,
@@ -17,6 +22,7 @@ body {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.4);
   color: whitesmoke;
+  padding: 0 10px;
 }
 
 

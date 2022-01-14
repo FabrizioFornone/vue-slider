@@ -27,5 +27,10 @@ new Vue({
         this.currentIndex = 0;
       }
     },
+    timeOut: function () {
+      setTimeout(() => {
+        this.currentIndex++;
+      }, 3000);
+    },
   },
 });

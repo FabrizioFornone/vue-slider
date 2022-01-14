@@ -22,24 +22,30 @@
     <title>Vue Slider Fabrizio Fornone</title>
   </head>
   <body>
-    <header class="text-center text-white mb-5"><h1>Vue Slider</h1></header>
+    <header class="text-center text-white mb-3"><h1>Vue Slider</h1></header>
     <!-- App VueJS -->
     <div id="app">
       <!-- Container Flex -->
-      <div class="container d-flex justify-content-center">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="d-flex align-items-center text-white">
+          <div class="timeout-class p-2">
+            Click on the watch: I'll change the image after 3 seconds -->
+          </div>
+          <i @click="timeOut" class="far fa-clock"></i>
+        </div>
         <!-- Item centered flex -->
         <div>
           <!-- Button BW -->
           <button
             @click="bwButton"
-            class="border border-white rounded-circle px-2 mx-2 fs-4 btn-bw"
+            class="border border-white rounded-circle mx-2 fs-4 btn-bw"
           >
             <i class="fas fa-angle-double-left"></i>
           </button>
           <!-- Button FW -->
           <button
             @click="fwButton"
-            class="border border-white rounded-circle px-2 mx-2 fs-4 btn-fw"
+            class="border border-white rounded-circle mx-2 fs-4 btn-fw"
           >
             <i class="fas fa-angle-double-right"></i>
           </button>
