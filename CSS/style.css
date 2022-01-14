@@ -30,5 +30,15 @@ img {
 }
 
 .shots > span {
-    padding: 0 10px;
+  padding: 0 10px;
+}
+
+/* VueJs Shots */
+
+.active {
+  background-color: seashell;
+}
+
+.disable {
+  background-color: rgb(214, 13, 13);
 }
