@@ -17,11 +17,16 @@ new Vue({
   },
   methods: {
     bwButton: function () {
-        this.currentIndex--;
+      this.currentIndex--;
+      if (this.currentIndex < 0) {
+        this.currentIndex = this.image.length - 1;
+      }
     },
     fwButton: function () {
-        this.currentIndex++;
+      this.currentIndex++;
+      if (this.currentIndex > this.image.length - 1) {
+        this.currentIndex = 0;
+      }
     },
-
   },
 });
