@@ -29,9 +29,10 @@
       <div class="container d-flex flex-column align-items-center">
         <div class="d-flex align-items-center text-white">
           <div class="timeout-class p-2">
-            Click on the watch: I'll change the image after 3 seconds -->
+            Click on the watch: I'll change image every 3 seconds -->
           </div>
-          <i @click="timeOut" class="far fa-clock"></i>
+          <i @click="autoplay" class="far fa-clock px-1"></i>
+          <i @click="stopAutoplay" class="far fa-stop-circle px-1"></i>
         </div>
         <!-- Item centered flex -->
         <div>

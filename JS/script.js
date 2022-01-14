@@ -27,10 +27,16 @@ new Vue({
         this.currentIndex = 0;
       }
     },
-    timeOut: function () {
-      setTimeout(() => {
+    autoplay: function () {
+      interval = setInterval(() => {
         this.currentIndex++;
+        if (this.currentIndex > this.image.length - 1) {
+          this.currentIndex = 0;
+        }
       }, 3000);
+    },
+    stopAutoplay: function () {
+      clearInterval(this.interval)
     },
   },
 });
