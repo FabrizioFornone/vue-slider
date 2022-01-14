@@ -23,7 +23,7 @@ new Vue({
     },
     fwButton: function () {
       this.currentIndex++;
-      if (this.currentIndex > image.length - 1) {
+      if (this.currentIndex > this.image.length - 1) {
         this.currentIndex = 0;
       }
     },
