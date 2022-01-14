@@ -7,11 +7,11 @@ new Vue({
   data: {
     currentIndex: 0,
     image: [
-      "https://unsplash.it/600?image=10",
-      "https://unsplash.it/600?image=20",
-      "https://unsplash.it/600?image=30",
+      "https://unsplash.it/600?image=1",
+      "https://unsplash.it/600?image=42",
+      "https://unsplash.it/600?image=83",
       "https://unsplash.it/600?image=40",
-      "https://unsplash.it/600?image=50",
+      "https://unsplash.it/600?image=45",
     ],
   },
   methods: {

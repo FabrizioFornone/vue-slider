@@ -23,29 +23,37 @@
   </head>
   <body>
     <header class="text-center text-white mb-5"><h1>Vue Slider</h1></header>
+    <!-- App VueJS -->
     <div id="app">
+      <!-- Container Flex -->
       <div class="container d-flex justify-content-center">
+        <!-- Item centered flex -->
         <div>
+          <!-- Button BW -->
           <button
             @click="bwButton"
-            class="text-white border border-white rounded-circle px-2 fs-4 btn-bw"
+            class="border border-white rounded-circle px-2 mx-2 fs-4 btn-bw"
           >
             <i class="fas fa-angle-double-left"></i>
           </button>
+          <!-- Button FW -->
           <button
             @click="fwButton"
-            class="text-white border border-white rounded-circle px-2 fs-4 btn-fw"
+            class="border border-white rounded-circle px-2 mx-2 fs-4 btn-fw"
           >
             <i class="fas fa-angle-double-right"></i>
           </button>
+          <!-- Shots container -->
           <div class="shots">
+            <!-- Shots slider -->
             <span
               v-for="(shots, index) in image"
-              :class="['text-white', 'mx-2', 'border', 'rounded-circle', currentIndex === index ? 'active' : 'disable' ]"
+              :class="['mx-2', 'border', 'rounded-circle', currentIndex === index ? 'active' : 'disable' ]"
             >
             </span>
           </div>
-          <img :src="image[currentIndex]" class="img-fluid" alt="" />
+          <!-- IMG slider -->
+          <img :src="image[currentIndex]" class="img-fluid border" alt="" />
         </div>
       </div>
     </div>
