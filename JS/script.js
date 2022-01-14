@@ -5,7 +5,6 @@
 new Vue({
   el: "#app",
   data: {
-    test: "Ecco il test",
     currentIndex: 0,
     image: [
       "https://unsplash.it/600?image=10",
@@ -14,6 +13,9 @@ new Vue({
       "https://unsplash.it/600?image=40",
       "https://unsplash.it/600?image=50",
     ],
+    shots: `<span
+    :class="['mx-2','border', 'rounded-circle', 'currentIndex === 1' ? 'active' : 'disable']"
+  ></span>`
   },
   methods: {
     bwButton: function () {
@@ -24,7 +26,7 @@ new Vue({
     },
     fwButton: function () {
       this.currentIndex++;
-      if (this.currentIndex > this.image.length - 1) {
+      if (this.currentIndex > image.length - 1) {
         this.currentIndex = 0;
       }
     },
