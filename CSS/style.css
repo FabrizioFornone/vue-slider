@@ -15,9 +15,20 @@ body {
 }
 
 .btn-fw {
-    right: 0;
+  right: 0;
 }
 
 img {
   border-radius: 25%;
+}
+
+.shots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+.shots > span {
+    padding: 0 10px;
 }
