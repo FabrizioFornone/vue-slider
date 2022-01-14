@@ -2,14 +2,13 @@ body {
   background-color: slategray;
 }
 
+/* Div flex centered*/
+
 .container > div {
   position: relative;
 }
 
-.btn-bw:hover,
-.btn-fw:hover {
-  color: slategray;
-}
+/* Buttons */
 
 .btn-bw,
 .btn-fw {
@@ -20,13 +19,23 @@ body {
   color: whitesmoke;
 }
 
+
 .btn-fw {
   right: 0;
 }
 
+.btn-bw:hover,
+.btn-fw:hover {
+  color: slategray;
+}
+
+/* IMG */
+
 img {
   border-radius: 50%;
 }
+
+/* Shots */
 
 .shots {
   position: absolute;
@@ -40,7 +49,7 @@ img {
   cursor: pointer;
 }
 
-/* VueJs Shots */
+/* VueJs Shots classes */
 
 .active {
   background-color: seashell;
