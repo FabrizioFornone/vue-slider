@@ -13,6 +13,7 @@ new Vue({
       "https://unsplash.it/600?image=40",
       "https://unsplash.it/600?image=45",
     ],
+    interval: null,
   },
   methods: {
     bwButton: function () {
@@ -28,7 +29,7 @@ new Vue({
       }
     },
     autoplay: function () {
-      interval = setInterval(() => {
+      this.interval = setInterval(() => {
         this.currentIndex++;
         if (this.currentIndex > this.image.length - 1) {
           this.currentIndex = 0;
@@ -36,7 +37,7 @@ new Vue({
       }, 3000);
     },
     stopAutoplay: function () {
-      clearInterval(this.interval)
+      clearInterval(this.interval);
     },
   },
 });
